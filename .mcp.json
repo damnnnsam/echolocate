@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "echolocate": {
+      "command": "uv",
+      "args": ["run", "--project", ".", "echolocate", "mcp"]
+    }
+  }
+}
