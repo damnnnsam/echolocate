@@ -97,4 +97,4 @@ Tools: `echolocate_status`, `echolocate_report`, `echolocate_trend`, `echolocate
 
 `onboarding.py` profile, topics, prompts · `engines/` one client per engine · `runner.py` the daily job (resumable) · `analyze.py` scores answers · `metrics.py` the report · `render.py` markdown + HTML · `cli.py`, `mcp_server.py`, `server.py` the interfaces · `db.py` SQLite (`data/echolocate.db`).
 
-Design, prompts and scoring method adapted from [dropoutsanta/gaio](https://github.com/dropoutsanta/gaio) (MIT). MIT, see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
