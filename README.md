@@ -6,6 +6,10 @@ You give it a URL. Claude reads the site, works out what the company sells, its 
 
 It is a CLI, an MCP server for coding agents, a REST API, an HTML dashboard and an optional daily email. Storage is one SQLite file.
 
+## Status
+
+Early (v0.1). Tested live end to end with the Gemini and Claude engines: onboard, run, score, report, trend, MCP server, dashboard. The ChatGPT, Perplexity and DataForSEO clients follow those vendors' documented APIs but have not been run against live keys yet.
+
 ## Engines
 
 Each engine switches on when its key is in `.env`. `echolocate status` shows what is live.
@@ -93,4 +97,4 @@ Tools: `echolocate_status`, `echolocate_report`, `echolocate_trend`, `echolocate
 
 `onboarding.py` profile, topics, prompts · `engines/` one client per engine · `runner.py` the daily job (resumable) · `analyze.py` scores answers · `metrics.py` the report · `render.py` markdown + HTML · `cli.py`, `mcp_server.py`, `server.py` the interfaces · `db.py` SQLite (`data/echolocate.db`).
 
-Design after [dropoutsanta/gaio](https://github.com/dropoutsanta/gaio) (MIT). MIT.
+Design, prompts and scoring method adapted from [dropoutsanta/gaio](https://github.com/dropoutsanta/gaio) (MIT). MIT, see [LICENSE](LICENSE).
